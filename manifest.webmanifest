@@ -1,0 +1,19 @@
+{
+  "name": "VN Du Lịch",
+  "short_name": "VN Du Lịch",
+  "description": "Khám phá Việt Nam đầy cảm hứng",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff4d4d",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

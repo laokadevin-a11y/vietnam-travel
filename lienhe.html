@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ VN Du Lịch – tư vấn miễn phí, đặt tour, hỏi đáp về hành trình khám phá Việt Nam.">
+    <title>Liên hệ &amp; Đặt tour | VN Du Lịch</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VN Du Lịch">
+    <meta property="og:title" content="Liên hệ &amp; Đặt tour | VN Du Lịch">
+    <meta property="og:description" content="Liên hệ VN Du Lịch – tư vấn miễn phí, đặt tour, hỏi đáp về hành trình khám phá Việt Nam.">
+    <meta property="og:image" content="https://vndulich.vn/picture/dao-ngoc-bien-phu-quoc.jpg">
+    <meta property="og:url" content="https://vndulich.vn/lienhe.html">
+    <link rel="canonical" href="https://vndulich.vn/lienhe.html">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-wrap { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px; align-items: start;
+        }
+        .contact-info h2 { color: var(--dark); margin-bottom: 15px; }
+        .contact-info p { color: #555; margin-bottom: 25px; line-height: 1.8; }
+        .contact-item {
+            display: flex; align-items: center; gap: 15px;
+            padding: 15px 0; border-bottom: 1px solid #eee;
+        }
+        .contact-item i {
+            width: 44px; height: 44px; flex-shrink: 0;
+            background: var(--primary); color: #fff;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem;
+        }
+        .contact-item h4 { font-size: 1rem; color: var(--dark); }
+        .contact-item p { margin: 0; font-size: 0.95rem; color: #555; }
+        .contact-form {
+            background: var(--white); border: 1px solid #eee;
+            border-radius: 18px; padding: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        }
+        .contact-form h3 { margin-bottom: 20px; color: var(--dark); }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; color: #444; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 12px 14px; border: 1px solid #ddd;
+            border-radius: 10px; font-size: 1rem; font-family: inherit;
+            transition: 0.3s; background: #fdfdfd;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(255,77,77,0.12);
+        }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .form-error { color: var(--primary); font-size: 0.85rem; margin-top: 5px; display: none; }
+        .form-error.show { display: block; }
+        .form-success {
+            display: none; text-align: center; padding: 30px;
+            background: #f6fff6; border: 1px solid #b8e6b8; border-radius: 12px;
+            margin-bottom: 18px;
+        }
+        .form-success.show { display: block; }
+        .form-success i { font-size: 2.5rem; color: #2e9e44; margin-bottom: 10px; }
+        .form-success h4 { color: #2e9e44; margin-bottom: 6px; }
+        .form-success p { color: #555; font-size: 0.95rem; }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+            .contact-form { padding: 25px; }
+        }
+    </style>
+<link rel='manifest' href='manifest.webmanifest'>
+
+    <!-- Google Analytics 4: thay G-XXXXXXXXXX bang Measurement ID that cua ban -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer=window.dataLayer||[];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js",new Date());
+        gtag("config","G-XXXXXXXXXX");
+    </script>
+</head>
+
+<body>
+    <nav class="navbar scrolled">
+        <div class="logo">VN<span> Du Lịch</span></div>
+        <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="diadiem.html">Địa điểm du lịch</a></li>
+            <li><a href="amthuc.html">Ẩm thực</a></li>
+            <li><a href="vanhoa.html">Văn hóa</a></li>
+            <li><a href="lienhe.html" class="active">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <header class="sub-header"
+        style="background-image: url('picture/dao-ngoc-bien-phu-quoc.jpg');">
+        <h1>Liên hệ &amp; Đặt tour</h1>
+    </header>
+
+    <div class="contact-wrap">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Chúng tôi luôn sẵn sàng đồng hành cùng bạn</h2>
+                <p>
+                    Bạn đang lên kế hoạch cho chuyến đi? Hãy để VN Du Lịch tư vấn miễn phí –
+                    từ chọn điểm đến, thời điểm lý tưởng đến lịch trình phù hợp ngân sách của bạn.
+                </p>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Điện thoại / Zalo</h4>
+                        <p>0900 000 000 (8:00 – 20:00)</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>lienhe@vndulich.vn</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+84 900 000 000</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Văn phòng</h4>
+                        <p>Việt Nam – phục vụ khách trong nước &amp; quốc tế</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="form-success" id="form-success">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Đã nhận thông tin của bạn!</h4>
+                    <p>Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất (demo – đang ở chế độ thử nghiệm).</p>
+                </div>
+                <h3>Gửi yêu cầu tư vấn</h3>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Họ và tên *</label>
+                        <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+                        <div class="form-error" data-for="name">Vui lòng nhập họ tên.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="ban@email.com" required>
+                        <div class="form-error" data-for="email">Vui lòng nhập email hợp lệ.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0900 000 000" required>
+                        <div class="form-error" data-for="phone">Vui lòng nhập số điện thoại.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tour">Điểm đến bạn quan tâm</label>
+                        <select id="tour" name="tour">
+                            <option value="">-- Chọn điểm đến --</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="halong">Vịnh Hạ Long</option>
+                            <option value="sapa">Sa Pa</option>
+                            <option value="hoian">Phố Cổ Hội An</option>
+                            <option value="phuquoc">Phú Quốc</option>
+                            <option value="other">Khác / chưa chọn</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Lời nhắn</label>
+                        <textarea id="message" name="message" placeholder="Số người, số ngày, sở thích du lịch của bạn…"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:100%; border:none; cursor:pointer;">
+                        <i class="fas fa-paper-plane"></i> Gửi yêu cầu
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class='float-contact'><a href='https://zalo.me/0900000000' class='fc-zalo' target='_blank' rel='noopener' aria-label='Chat Zalo'><i class='fab fa-weixin'></i></a><a href='tel:0900000000' class='fc-call' aria-label='Goi dien'><i class='fas fa-phone-alt'></i></a></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>VN Du Lịch</h4>
+                    <p>Đồng hành cùng bạn trên mọi hành trình khám phá vẻ đẹp Việt Nam – từ núi rừng Tây Bắc đến biển đảo phương Nam.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Khám phá</h4>
+                    <ul>
+                        <li><a href="diadiem.html">Địa điểm du lịch</a></li>
+                        <li><a href="amthuc.html">Ẩm thực Việt Nam</a></li>
+                        <li><a href="vanhoa.html">Văn hóa &amp; Lịch sử</a></li>
+                        <li><a href="lienhe.html">Liên hệ đặt tour</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <p><i class="fas fa-phone"></i> 0900 000 000</p>
+                    <p><i class="fas fa-envelope"></i> lienhe@vndulich.vn</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Việt Nam</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VN Du Lịch | Thiết kế bằng ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        // Form liên hệ: validate + lưu demo (GĐ5 sẽ nối form thật)
+// BẬT FORM THẬT: dán endpoint Formspree vào đây (vd https://formspree.io/f/xxxxx) và đặt FORMSPREE_ACTIVE=true
+const FORMSPREE_ENDPOINT=''; // dán endpoint vào đây
+const FORMSPREE_ACTIVE = FORMSPREE_ENDPOINT.length > 0;
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    let valid = true;
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const tour = document.getElementById('tour').value;
+    const message = document.getElementById('message').value.trim();
+    document.querySelectorAll('.form-error').forEach(el => el.classList.remove('show'));
+    if (!name) { showError('name'); valid = false; }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError('email'); valid = false; }
+    if (!phone || phone.replace(/\D/g, '').length < 8) { showError('phone'); valid = false; }
+    if (!valid) return;
+    const record = { name, email, phone, tour, message, time: new Date().toISOString() };
+    const saved = JSON.parse(localStorage.getItem('vndulich-leads') || '[]');
+    saved.push(record);
+    localStorage.setItem('vndulich-leads', JSON.stringify(saved));
+    if (FORMSPREE_ACTIVE) {
+        fetch(FORMSPREE_ENDPOINT, { method: 'POST', body: JSON.stringify(record), headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' } })
+            .then(function(res){ if(!res.ok) throw new Error('HTTP ' + res.status); })
+            .then(function(){ redirectThanks(); })
+            .catch(function(err){ console.error(err); redirectThanks(); });
+    } else {
+        redirectThanks();
+    }
+});
+function redirectThanks(){ document.getElementById('form-success').classList.add('show'); setTimeout(function(){ window.location.href = 'cam-on.html'; }, 1200); }
+
+function showError(fieldId) {
+            document.querySelector('.form-error[data-for="' + fieldId + '"]').classList.add('show');
+        }
+    </script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
+</body>
+
+</html>

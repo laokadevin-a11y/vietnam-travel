@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Địa điểm du lịch nổi tiếng Việt Nam – Hà Nội, Vịnh Hạ Long, Sa Pa, Phố Cổ Hội An, Phú Quốc. Lọc theo vùng miền và tìm kiếm nhanh.">
+    <title>Địa điểm du lịch | VN Du Lịch</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VN Du Lịch">
+    <meta property="og:title" content="Địa điểm du lịch | VN Du Lịch">
+    <meta property="og:description" content="Địa điểm du lịch nổi tiếng Việt Nam – Hà Nội, Vịnh Hạ Long, Sa Pa, Phố Cổ Hội An, Phú Quốc.">
+    <meta property="og:image" content="https://vndulich.vn/picture/ha-long-bay.jpg">
+    <meta property="og:url" content="https://vndulich.vn/diadiem.html">
+    <link rel="canonical" href="https://vndulich.vn/diadiem.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Địa điểm du lịch Việt Nam",
+        "url": "https://vndulich.vn/diadiem.html",
+        "description": "Danh sách các địa điểm du lịch nổi tiếng tại Việt Nam.",
+        "hasPart": [
+            { "@type": "TouristAttraction", "name": "Hà Nội", "url": "https://vndulich.vn/detail.html?id=hanoi" },
+            { "@type": "TouristAttraction", "name": "Vịnh Hạ Long", "url": "https://vndulich.vn/detail.html?id=halong" },
+            { "@type": "TouristAttraction", "name": "Phố Cổ Hội An", "url": "https://vndulich.vn/detail.html?id=hoian" },
+            { "@type": "TouristAttraction", "name": "Sa Pa", "url": "https://vndulich.vn/detail.html?id=sapa" },
+            { "@type": "TouristAttraction", "name": "Phú Quốc", "url": "https://vndulich.vn/detail.html?id=phuquoc" }
+        ]
+    }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel='manifest' href='manifest.webmanifest'>
+
+    <!-- Google Analytics 4: thay G-XXXXXXXXXX bang Measurement ID that cua ban -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer=window.dataLayer||[];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js",new Date());
+        gtag("config","G-XXXXXXXXXX");
+    </script>
+</head>
+
+<body>
+    <nav class="navbar scrolled">
+        <div class="logo">VN<span> Du Lịch</span></div>
+        <div class="lang-select-wrap">
+            <select id="lang-select" aria-label="Chọn ngôn ngữ">
+                <option value="vi">Tiếng Việt</option>
+                <option value="en">English</option>
+                <option value="jp">日本語</option>
+            </select>
+        </div>
+        <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="diadiem.html" class="active">Địa điểm du lịch</a></li>
+            <li><a href="amthuc.html">Ẩm thực</a></li>
+            <li><a href="vanhoa.html">Văn hóa</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <header class="sub-header"
+        style="background-image: url('picture/ha-long-bay.jpg');">
+        <h1 id="page-title">Địa điểm du lịch</h1>
+    </header>
+
+    <div class="intro-text">
+        <p id="page-intro">
+            Việt Nam không chỉ có đường bờ biển tuyệt đẹp mà còn sở hữu những dãy núi hùng vĩ,
+            những đô thị cổ đầy dấu ấn lịch sử. Hãy cùng chúng tôi khám phá những điểm đến nổi bật nhất.
+        </p>
+    </div>
+
+    <div class="toolbar">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Tìm kiếm điểm đến…" aria-label="Tìm kiếm điểm đến">
+        </div>
+        <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <button class="filter-btn" data-filter="bac">Miền Bắc</button>
+            <button class="filter-btn" data-filter="trung">Miền Trung</button>
+            <button class="filter-btn" data-filter="nam">Miền Nam</button>
+        </div>
+    </div>
+
+    <section class="container-grid" id="dest-grid"></section>
+
+    <div class="no-results" id="no-results">
+        <i class="fas fa-search" style="font-size:2rem; margin-bottom:12px; display:block;"></i>
+        Không tìm thấy điểm đến phù hợp.
+    </div>
+
+    <div class="float-contact">
+        <a href="https://zalo.me/0900000000" class="fc-zalo" target="_blank" rel="noopener" aria-label="Chat Zalo"><i class="fab fa-weixin"></i></a>
+        <a href="tel:0900000000" class="fc-call" aria-label="Gọi điện"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>VN Du Lịch</h4>
+                    <p>Đồng hành cùng bạn trên mọi hành trình khám phá vẻ đẹp Việt Nam – từ núi rừng Tây Bắc đến biển đảo phương Nam.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Khám phá</h4>
+                    <ul>
+                        <li><a href="diadiem.html">Địa điểm du lịch</a></li>
+                        <li><a href="amthuc.html">Ẩm thực Việt Nam</a></li>
+                        <li><a href="vanhoa.html">Văn hóa &amp; Lịch sử</a></li>
+                        <li><a href="lienhe.html">Liên hệ đặt tour</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <p><i class="fas fa-phone"></i> 0900 000 000</p>
+                    <p><i class="fas fa-envelope"></i> lienhe@vndulich.vn</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Việt Nam</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VN Du Lịch | Thiết kế bằng ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script>
+        // ---------- Trang Địa điểm động: sinh thẻ từ data.js + tìm kiếm + lọc ----------
+        const grid = document.getElementById('dest-grid');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search-input');
+        let currentLang = localStorage.getItem('vnlang') || 'vi';
+        let currentFilter = 'all';
+
+        function renderCards() {
+            const rawQ = (searchInput.value || '').trim().toLowerCase();
+            const q = rawQ.replace(/\s+/g, '');
+            const items = SITE_DATA.destinations.filter(d => {
+                const c = d[currentLang] || d.vi;
+                const matchRegion = currentFilter === 'all' || d.region === currentFilter;
+                const haystack = (c.title + ' ' + (c.regionLabel || '') + ' ' + (c.desc || '')).toLowerCase().replace(/\s+/g, '');
+                const matchQuery = !q || haystack.includes(q);
+                return matchRegion && matchQuery;
+            });
+
+            if (!items.length) {
+                grid.innerHTML = '';
+                noResults.classList.add('show');
+                return;
+            }
+            noResults.classList.remove('show');
+            grid.innerHTML = items.map(d => {
+                const c = d[currentLang] || d.vi;
+                const shortDesc = c.desc.length > 120 ? c.desc.slice(0, 120) + '…' : c.desc;
+                return `
+                    <a href="detail.html?id=${d.id}" class="card-nodecor">
+                        <div class="glass-card">
+                            <img src="${d.img}" alt="${c.title}" loading="lazy">
+                            <div class="glass-card-body">
+                                <h3>${c.title}</h3>
+                                <p style="margin-bottom:12px;">${shortDesc}</p>
+                                <span style="font-size:0.85rem; color:var(--primary); font-weight:600;">
+                                    <i class="fas fa-chevron-circle-right"></i> ${currentLang === 'vi' ? 'Xem chi tiết' : currentLang === 'en' ? 'View details' : '詳しく見る'}
+                                </span>
+                            </div>
+                        </div>
+                    </a>`;
+            }).join('');
+        }
+
+        // Nút lọc vùng
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderCards();
+            });
+        });
+
+        // Tìm kiếm (debounce nhẹ)
+        let searchTimer;
+        searchInput.addEventListener('input', () => {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(renderCards, 150);
+        });
+
+        // Đổi ngôn ngữ → render lại
+        document.getElementById('lang-select').addEventListener('change', (e) => {
+            currentLang = e.target.value;
+            localStorage.setItem('vnlang', currentLang);
+            renderCards();
+            // Cập nhật title/intro
+            const t = {
+                vi: 'Địa điểm du lịch',
+                en: 'Tourist Destinations',
+                jp: '人気観光地'
+            };
+            const i = {
+                vi: 'Việt Nam không chỉ có đường bờ biển tuyệt đẹp mà còn sở hữu những dãy núi hùng vĩ, những đô thị cổ đầy dấu ấn lịch sử. Hãy cùng chúng tôi khám phá những điểm đến nổi bật nhất.',
+                en: 'Vietnam is not only a beautiful coastline but also home to majestic mountains and ancient towns full of history. Let us explore the most outstanding destinations together.',
+                jp: 'ベトナムは美しい海岸線だけでなく、壮大な山々や、歴史の面影を残す都市にも恵まれています。'
+            };
+            document.getElementById('page-title').textContent = t[currentLang];
+            document.getElementById('page-intro').textContent = i[currentLang];
+            document.getElementById('search-input').placeholder =
+                currentLang === 'vi' ? 'Tìm kiếm điểm đến…' :
+                currentLang === 'en' ? 'Search destinations…' : '観光地を検索…';
+        });
+
+        renderCards();
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+
+</html>
